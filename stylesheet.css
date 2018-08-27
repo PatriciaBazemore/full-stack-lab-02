@@ -9,5 +9,9 @@ h1 {
 
 .friend {
     background-color: red;
+    
+}
+
+.friend p {
     text-transform: uppercase;
 }

@@ -5,20 +5,24 @@ var friends=["Katie", "Anna", "Margaret", "Anna", "Ryan"];
 
 
 
-for (var f = 0; f < friends.length; f++){
-    console.log(friends[f].toUpperCase()+":")
+for (var i = 0; i < friends.length; i++){
+    console.log(friends[i].toUpperCase()+":");
+    /*var friend="friend[i];"*/
 
-    for (var i = 99; i > 0 ; i--) {
-        var x = i-1;
-
-      if(i >1){
-        console.log(i + " lines of code in the file, " + i + " lines of code; " + friends[f] + " strikes one out, clears it all, "+ x + " lines of code in the file")
+    for (var j = 99; j > 0 ; j--) {
+        var x = j-1; /* or just use j-1 in the concatination*/
+           // to test- console.log(j);
+      if(j >2){
+        console.log(j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, "+ x + " lines of code in the file")
       } 
-        else {
-        console.log(i + " line of code in the file, " + i + " line of code; " + friends[f] + " strikes one out, clears it all, " + "no more lines of code in the file")
+        else if (j ===2){
+        console.log(j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + "one more line of code in the file")
 
-        }  
+        }  else {
+            console.log(j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, no more lines of code in the file")
+        }
 
 
     }
 }
+
